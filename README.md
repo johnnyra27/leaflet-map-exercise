@@ -1,4 +1,4 @@
-# leaflet-map-simple
+# Johnny's Leaflet Practice Assignment
 Johnny's version
 
 ## Link to live map (replace with link to your site)

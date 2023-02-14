@@ -1,5 +1,5 @@
-# Johnny's Leaflet Practice Assignment
-Johnny's version
+# Johnny's Story Map Draft
+Venues I Have Performed In.
 
 ## Link to live map (replace with link to your site)
 https://johnnyra27.github.io/leaflet-map-exercise/

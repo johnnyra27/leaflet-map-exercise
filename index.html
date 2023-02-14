@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>leaflet-map-simple</title>
+  <title>venues-ive-performed-at</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">My First Show</div>
+  <div id="map-title">Venues Ive Performed At</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -43,6 +43,25 @@
   /* Display a point marker with pop-up text */
   L.marker([25.837, -80.227]).addTo(map) // EDIT marker coordinates
   .bindPopup("Place of my first show"); // EDIT pop-up text message
+    
+      /* Set up the initial map center and zoom level */
+  var map = L.map('map', {
+    center: [25.857, -80.120], // Edited coordinates to re-center map
+    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    scrollWheelZoom: false
+  });
+
+  /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
+  L.tileLayer(
+    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://osm.org/copyright">\
+        OpenStreetMap</a> contributors, &copy;\
+        <a href="https://carto.com/attribution">CARTO</a>'
+  }).addTo(map);
+
+  /* Display a point marker with pop-up text */
+  L.marker([25.857, -80.120]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Place of my second show"); // EDIT pop-up text message
 
   </script>
 </body>
